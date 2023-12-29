@@ -269,14 +269,15 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 5vw;
-  width: 5vw;
+  height: 5.5vw;
+  width: 5.5vw;
   background-color: #000000;
   border-radius: 50%;
   position: fixed;
-  z-index: 10;
+  z-index: 9;
   transform: translate(-50%, -50%);
 }
+
 #cursor2 h5 {
   font-size: 0.8vw;
   text-decoration: none;
