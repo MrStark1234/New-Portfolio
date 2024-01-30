@@ -419,3 +419,43 @@ button {
 }
 
 /* ---------------------------contact styling---------------------------- */
+
+@media screen and (max-width: 380px) {
+  .elem h1 {
+    letter-spacing: 1px; /* Further decrease font size for smaller screens */
+  }
+  .box img {
+    display: none;
+  }
+  .box p {
+    font-size: small;
+  }
+  .box video {
+    height: 150px;
+    width: 110px;
+  }
+  #page4 .sv svg {
+    display: none;
+  }
+  #vid {
+    height: 20vh;
+  }
+  .sv h2 span {
+    font-size: 4px;
+  }
+  .sv h2 {
+    font-size: small;
+  }
+  #page3-elem .box {
+    height: 50%;
+  }
+  #page4 {
+    height: 50%;
+  }
+  #page6 {
+    flex-direction: column;
+  }
+  #page6-right {
+    width: 100%;
+  }
+}
