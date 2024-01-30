@@ -420,9 +420,32 @@ button {
 
 /* ---------------------------contact styling---------------------------- */
 
-@media screen and (max-width: 380px) {
+@media screen and (min-width: 340px) and (max-width: 480px) {
   .elem h1 {
     letter-spacing: 1px; /* Further decrease font size for smaller screens */
+    font-size: 16px;
+    text-align: center;
+  }
+  nav h3 {
+    font-size: 16px;
+  }
+  .elem h2 {
+    font-size: 40px;
+  }
+  #page3-top h4 {
+    font-size: 40px;
+  }
+  #page3-top h4 span {
+    font-size: 20px;
+  }
+  .service {
+    font-size: 16px;
+  }
+  #page3-top h2 {
+    font-size: 18px;
+  }
+  .elem h2 span {
+    font-size: 20px;
   }
   .box img {
     display: none;
@@ -431,18 +454,26 @@ button {
     font-size: small;
   }
   .box video {
-    height: 150px;
-    width: 110px;
+    height: 250px;
+    width: 120px;
   }
   #page4 .sv svg {
     display: none;
   }
   #vid {
-    height: 20vh;
+    height: 140px;
   }
   .sv h2 span {
-    font-size: 4px;
+    font-size: 6px;
+    padding: 3px;
   }
+  #page5-top h1 {
+    font-size: 30px;
+  }
+  #page5-top span {
+    font-size: 20px;
+  }
+
   .sv h2 {
     font-size: small;
   }
