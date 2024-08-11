@@ -72,36 +72,36 @@ function cursorEffect() {
 cursorEffect();
 
 function page2Animation() {
-  gsap.from(".elem h1,.elem a,.elem img,.elem h2", {
-    y: 120,
+  gsap.from(".elem h1, .elem a, .elem img, .elem h2", {
+    y: 100, // Reduced the initial Y offset
     opacity: 0,
-    stagger: 0.8,
-    duration: 4,
+    stagger: 0.6, // Reduced stagger for a smoother sequence
+    duration: 3, // Reduced duration for a quicker animation
+    ease: "power2.out", // Added easing for a smoother transition
     scrollTrigger: {
       trigger: "#page2",
       scroller: "#main",
-      start: "top 46%",
-      end: "top 46%",
-
-      scrub: 4,
+      start: "top 70%", // Adjusted start point for earlier trigger
+      end: "bottom bottom", // Extended the end point
+      scrub: 1.5, // Adjusted scrub for smoother playback
     },
   });
 }
 page2Animation();
 
 function page3Animation() {
-  gsap.from("#page3-top h4,#page3-top h2,#page3-top p,#cv", {
-    y: 120,
+  gsap.from("#page3-top h4, #page3-top h2, #page3-top p, #cv", {
+    y: 100, // Reduced the initial Y offset
     opacity: 0,
-    stagger: 0.4,
-    duration: 4,
+    stagger: 0.3, // Reduced stagger for a smoother sequence
+    duration: 3, // Reduced duration for a quicker animation
+    ease: "power2.out", // Added easing for a smoother transition
     scrollTrigger: {
       trigger: "#page3",
       scroller: "#main",
-      start: "top 46%",
-      end: "top 46%",
-
-      scrub: 4,
+      start: "top 80%", // Adjusted start point for earlier trigger
+      end: "bottom bottom", // Extended the end point
+      scrub: 1.5, // Adjusted scrub for smoother playback
     },
   });
 }
@@ -139,13 +139,13 @@ function gsaptimeline() {
     x: 50,
     opacity: 0,
     duration: 1,
-    stagger: 0.1,
+    stagger: 0.3,
   });
   tl.to("#loader h3", {
     opacity: 0,
     x: -40,
     duration: 1,
-    stagger: 0.1,
+    stagger: 0.3,
   });
   tl.to("#loader", {
     opacity: 0,
