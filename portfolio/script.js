@@ -161,18 +161,44 @@ function gsaptimeline() {
 }
 gsaptimeline();
 
-function sliderAnimation() {
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-  });
-}
-sliderAnimation();
+// function sliderAnimation() {
+//   var swiper = new swiper(".mySwiper", {
+//     slidesPerView: 1,
+//     spaceBetween: 30,
+//     loop: true,
+//     autoplay: {
+//       delay: 2500,
+//       disableOnInteraction: false,
+//     },
+//   });
+// }
+// sliderAnimation();
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   var swiper = new Swiper(".mySwiper", {
+//     loop: true,
+//     autoplay: {
+//       delay: 0,
+//       disableOnInteraction: false,
+//     },
+//     speed: 3000,
+//     slidesPerView: "auto",
+//     spaceBetween: 10,
+//     centeredSlides: true,
+//   });
+// });
+
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto", // Adjusts slides to fit the container width
+  loop: true, // Enables continuous loop mode
+  spaceBetween: 10, // Space between slides
+  speed: 3000, // Adjust this value for scroll speed
+  autoplay: {
+    delay: 0, // No delay between transitions
+    disableOnInteraction: false,
+  },
+  loopedSlides: 10, // Ensures continuous loop
+});
 
 function successMsg() {
   let btn = document.querySelector("#submit");

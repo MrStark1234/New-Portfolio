@@ -18,6 +18,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #000000;
 }
 #loader {
   height: 100%;
@@ -90,7 +91,7 @@ h4 {
 
 #page1-content h1 {
   font-size: 16vw;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
 }
 #page1-content h1 span {
   font-family: rej;
@@ -106,7 +107,7 @@ h4 {
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-color: #faf8f3bc;
+  background-color: #fffffff9;
 }
 .elem h2 {
   font-weight: 100;
@@ -154,9 +155,10 @@ h4 {
 }
 #page3 {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   position: relative;
   padding: 3vw;
+  background-color: #ffffff;
 }
 #page3-top {
   text-align: center;
@@ -238,7 +240,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffffcd;
+  background-color: #ffffffee;
 }
 .sv {
   display: flex;
@@ -284,10 +286,10 @@ h4 {
   color: #fff;
 }
 #page5 {
-  height: 100vh;
   width: 100%;
   padding: 4vw 0;
   position: relative;
+  background-color: #ffffff;
 }
 #page5-top h1 {
   font-size: 5vw;
@@ -310,13 +312,14 @@ h4 {
   margin-top: 10px;
   background: #000000;
 }
-#swipper {
+/* #swipper {
   height: 60vh;
   width: 100%;
   position: relative;
 }
 
 .swiper {
+  margin-top: 20px;
   width: 100%;
   height: 100%;
 }
@@ -325,20 +328,59 @@ h4 {
   padding: 4vw;
   text-align: center;
   font-size: 18px;
-  /* background: #afafaf; */
+ 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .swiper-slide img {
-  /* border: 4px solid #ff5f38; */
+  
+
   display: block;
   width: 96%;
   object-fit: cover;
+  border-radius: 20px;
+} */
+
+/* .mySwiper {
+  width: 100%;
+  height: 100%;
 }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+} */
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px; /* Set this to the desired square size */
+  height: 600px; /* Match this with the width for perfect square */
+  overflow: hidden; /* Ensure any overflow is hidden */
+  box-sizing: border-box; /* Include padding and border in width and height */
+}
+
+.swiper-slide a img,
+a {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire div without distortion */
+  display: block; /* Ensures no extra space from inline elements */
+  border-radius: 20px;
+}
+
 #page6 {
-  height: 100vh;
   width: 100%;
   padding: 4vw 0;
   position: relative;
@@ -417,6 +459,14 @@ button {
   background: linear-gradient(180deg, #541201, -12.71%, #ff5f38 99.36%);
   box-shadow: 0px 4px 26px -2px #ff7c5b;
 }
+.down {
+  text-align: center;
+  font-size: smaller;
+  font-weight: bolder;
+  background-color: #000000;
+  color: #dadada;
+  border-top: 1px solid grey;
+}
 
 /* ---------------------------contact styling---------------------------- */
 
@@ -488,5 +538,15 @@ button {
   }
   #page6-right {
     width: 100%;
+  }
+  #page4-cont {
+    height: auto;
+  }
+  .swiper-slide {
+    height: 200px;
+    width: 200px;
+  }
+  #page3-elem {
+    height: 50vh;
   }
 }
